@@ -1,4 +1,5 @@
 import React from 'react';
+import About from "../components/about.jsx";
 
 // Import hero image
 import heroImage from '../assets/img/hero.png';
@@ -24,7 +25,8 @@ const Hero = () => {
   const imageStyle = 'w-10 h-10 -ml-2 rounded-full ring-2 ring-white';
 
   return (
-    <main className='bg-orange-100 flex flex-row justify-center px-15 py-10 gap-10 h-screen items-center'>
+    <>
+    <main className='bg-orange-100 flex flex-row justify-center pb-20 px-15 py-10 gap-10 h-auto items-center'>
       <div className='flex flex-col justify-left h-auto w-1/2 gap-10'>
         <h1 className="text-5xl mt-10 font-extrabold text-gray-700 text-left flex flex-col">
           <span>A healthy meal</span>
@@ -72,6 +74,8 @@ const Hero = () => {
         />
       </div>
     </main>
+    <About />
+          </>
   );
 };
 
