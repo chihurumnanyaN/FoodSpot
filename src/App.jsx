@@ -4,6 +4,8 @@ import Nav from './components/nav'
 import Hero from './components/hero'
 import Meal from './components/meal'
 import TestimonialsPage from './components/testimonials'
+import Pricing from './components/pricing'
+import Footer from './components/footer'
 
 const App  = () => {
   
@@ -13,6 +15,9 @@ const App  = () => {
       <Hero />
       <Meal/>
       <TestimonialsPage/>
+       <Pricing/>
+      <Footer/>
+     
     </>
   )
 }
