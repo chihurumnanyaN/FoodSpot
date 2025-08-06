@@ -45,7 +45,7 @@ const Hero = () => {
           </li>
           <li>
             <button className='p-3 h-12 rounded-md font-extrabold text-xl w-50 text-orange-400 bg-white'>
-              Learn More
+              Learn More ↠
             </button>
           </li>
         </ul>

@@ -37,7 +37,7 @@ const Companies = () => {
 
 const Step = ({ number, title, description, image, reverse }) => {
   return (
-    <div className={`flex flex-col mt-30 md:flex-row ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
+    <div className={`flex flex-col mt-30 md:flex-row mb-30 ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
       <div className="md:w-1/2">
         <p className="text-8xl font-bold text-gray-300">{number}</p>
         <h3 className="text-3xl font-bold text-gray-800 mt-6">{title}</h3>
