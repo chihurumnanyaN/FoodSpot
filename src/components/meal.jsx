@@ -83,7 +83,7 @@ const Diets = () => {
 
 const Meal = () => {
   return (
-    <>
+    <section id="meals">
       <div className={"flex flex-col justify-center items-center mt-20  p-5 md:p-20 "}>
         <p className="text-orange-500 font-bold">MEALS</p>
         <h1 className="md:text-5xl text-4xl text-center font-extrabold text-gray-600">
@@ -114,7 +114,7 @@ paleo"
           <a className="hover:underline text-lg font-medium text-orange-500" href="">See all recipes →</a>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

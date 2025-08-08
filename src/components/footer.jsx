@@ -14,7 +14,7 @@ const Footer = () => {
             
             <ul className="flex gap-4 text-xl mt-4 text-gray-600">
                 <li>
-                    <a href="https://x.com/ChihurumnanyN">
+                    <a href="https://x.com/ChihurumnanyaN">
 <ion-icon name="logo-twitter"></ion-icon></a>
                 </li>
                 <li>

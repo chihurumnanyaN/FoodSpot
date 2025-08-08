@@ -62,7 +62,7 @@ const Expect = ({iconName, heading, about}) => {
 
 const Pricing = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-20 pt-20 px-5 md:px-20 gap-10" >
+    <section id="pricing" className="flex flex-col justify-center items-center py-20 pt-20 px-5 md:px-20 gap-10" >
               <div className="flex flex-col justify-center items-start gap-5 w-full  ">
         <p className="text-orange-500 font-bold" >PRICING</p>
         <h1 className="text-5xl font-bold text-gray-700">Eating well without breaking the bank</h1>

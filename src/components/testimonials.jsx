@@ -38,7 +38,7 @@ const Testimonials = ({img ,sayings ,name}) => {
 const TestimonialsPage = () => {
   const imageStyle = "w-45 md:h-45 h-auto";
   return (
-    <section className="flex flex-col md:flex-row justify-center items-center gap-8 bg-orange-200 mt-10 p-5 md:pl-15 md:pr-0 py-20">
+    <section id="testimonial" className="flex flex-col md:flex-row justify-center items-center gap-8 bg-orange-200 mt-10 p-5 md:pl-15 md:pr-0 py-20">
       <div className="flex flex-col justify-center items-start ">
         <p className="text-orange-500 font-bold" >TESTIMONIALS</p>
         <h1 className="text-4xl font-bold text-gray-700">Once You Try it, You Can't<br/> Go Back</h1>
