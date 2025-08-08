@@ -37,7 +37,7 @@ const Companies = () => {
 
 const Step = ({ number, title, description, image, reverse }) => {
   return (
-    <div id="about" className={`flex flex-col mt-10 md:mt-30 md:flex-row mb-30  ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
+    <div  className={`flex flex-col mt-10 md:mt-30 md:flex-row mb-30  ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
       <div className="md:w-1/2 ">
         <p className="text-8xl font-bold text-gray-300">{number}</p>
         <h3 className="text-3xl font-bold text-gray-800 mt-6">{title}</h3>
@@ -55,7 +55,7 @@ const Step = ({ number, title, description, image, reverse }) => {
 
 const About = () => {
   return (
-    <>
+    <section id="about">
       <Companies />
       <div className="flex flex-col px-6 md:px-20 mt-20">
         <p className="capitalize text-orange-600 font-bold">HOW IT WORKS</p>
@@ -84,7 +84,7 @@ const About = () => {
           image={appScreen3}
         />
       </section>
-    </>
+    </section>
   );
 };
 
