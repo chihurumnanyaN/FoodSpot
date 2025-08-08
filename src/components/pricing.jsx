@@ -62,13 +62,13 @@ const Expect = ({iconName, heading, about}) => {
 
 const Pricing = () => {
   return (
-    <section className="flex flex-col justify-center items-center py-20 pt-20 px-20 gap-10" >
+    <section className="flex flex-col justify-center items-center py-20 pt-20 px-5 md:px-20 gap-10" >
               <div className="flex flex-col justify-center items-start gap-5 w-full  ">
         <p className="text-orange-500 font-bold" >PRICING</p>
         <h1 className="text-5xl font-bold text-gray-700">Eating well without breaking the bank</h1>
         </div>
 
-        <div className="flex flex-row justify-center items-center gap-20 mt-20">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-20 mt-20">
           <PriceCard
             price="337"
             isPro={false}
@@ -94,7 +94,7 @@ const Pricing = () => {
         </div>
         <p className="text-gray-700 text-sm">Prices include all applicable taxes. Users can cancel at any time. Both plans include the following</p>
     
-        <div className="flex flex-row justify-center item-center gap-10 mt-20">
+        <div className="flex flex-col md:flex-row justify-center item-center gap-10 mt-20">
           <Expect
             iconName="flame"
             heading="Never cool again!"

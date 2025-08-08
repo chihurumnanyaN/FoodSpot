@@ -14,7 +14,7 @@ const MealCards = ({
 }) => {
   const Iconstyle = "text-orange-500 text-sm w-6 h-6 ";
   return (
-  <div className="flex flex-col justify-center items-start gap-3 mt-20 bg-white rounded-2xl shadow-lg w-80 h-130 pb-4">
+  <div className="flex flex-col justify-center items-start gap-3 md:mt-20 mt-10 bg-white rounded-2xl shadow-lg w-100 h-auto md:w-80 md:h-130 pb-4">
     <img className="w-auto rounded-t-2xl" src={img} alt={name} />
 
     <ul className="flex gap-2 w-fit pl-5  mt-4">
@@ -84,9 +84,9 @@ const Diets = () => {
 const Meal = () => {
   return (
     <>
-      <div className={"flex flex-col justify-center items-center mt-20   "}>
+      <div className={"flex flex-col justify-center items-center mt-20  p-5 md:p-20 "}>
         <p className="text-orange-500 font-bold">MEALS</p>
-        <h1 className="text-5xl font-extrabold text-gray-600">
+        <h1 className="md:text-5xl text-4xl text-center font-extrabold text-gray-600">
           FoodSpot AI Chooses from 5000+ recipes
         </h1>
       </div>

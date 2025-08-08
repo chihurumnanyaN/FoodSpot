@@ -37,13 +37,13 @@ const Companies = () => {
 
 const Step = ({ number, title, description, image, reverse }) => {
   return (
-    <div className={`flex flex-col mt-30 md:flex-row mb-30 ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
-      <div className="md:w-1/2">
+    <div className={`flex flex-col mt-10 md:mt-30 md:flex-row mb-30  ${reverse ? "md:flex-row-reverse" : ""} items-center gap-10 px-6 md:px-20 py-10`}>
+      <div className="md:w-1/2 ">
         <p className="text-8xl font-bold text-gray-300">{number}</p>
         <h3 className="text-3xl font-bold text-gray-800 mt-6">{title}</h3>
         <p className="text-gray-500 text-xl mt-8">{description}</p>
       </div>
-      <div className="md:w-1/2 flex justify-center items-center relative">
+      <div className="md:w-1/2 flex justify-center items-center relative mt-20 md:mt-0">
         <div className="w-[280px] h-[280px] rounded-full bg-orange-100 flex justify-center items-center relative z-0">
           <div className="w-[240px] h-[240px] rounded-full bg-orange-200 z-10"></div>
           <img className="absolute w-[200px] h-auto z-20" src={image} alt={title} />

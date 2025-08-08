@@ -2,13 +2,13 @@ import React from 'react'
 
 const Footer = () => {
 
-    const spanstyles = "font-bold text-xl text-gray-700";
-    const ulstyles = "text-gray-600 flex flex-col gap-5 text- mt-2";
+    const spanstyles = "font-bold md:text-xl text-gray-700";
+    const ulstyles = "text-gray-600 flex flex-col gap-5 text-sm mt-2";
   return (
     <>
-    <footer className="flex flex-col justify-center items-center gap-6 border-t border-t-gray-300 text-gray-600">
+    <footer className="flex flex-col justify-center items-center gap-4 md:gap-6 border-t border-t-gray-300 text-gray-600">
 
-        <div className="flex flex-row justify-center items-start gap-20 w-full mt-25" >
+        <div className="flex flex-col md:flex-row md:justify-center items-start pl-5 gap-20 w-full mt-25" >
         <div className="flex flex-col justify-center items-start gap-4 ">
               <p className="font-extrabold  text-4xl">Food<span className="text-orange-600">Spot.</span></p>
             
@@ -26,7 +26,7 @@ const Footer = () => {
                 </li>
             </ul>
              
-             <p className="text-left text-sm text-gray-500 mt-8">
+             <p className="text-left text-lg text-gray-500 mt-8">
   Built with ⚛️ React by <br/> <span className="font-semibold">ChihurumnanyaN</span>
 </p>
         </div>

@@ -23,21 +23,22 @@ import image12 from '../assets/img/gallery/gallery-12.jpg';
 
 const Testimonials = ({img ,sayings ,name}) => {
     return (
-        <div className="flex flex-col justify-start gap-4 m-2 items-start w-60 mt-10 ">
+        <div className="flex flex-col justify-start gap-4 m-2 items-start w-40 md:w-60 mt-10 ">
             <img 
             className="w-15 h-15 rounded-full mb-4"
             src={img} 
             alt={`A photo of ${name}, our customer`}
              />
-            <p className="text-xl font-gray-600 ">{sayings}</p>
+            <p className="text-sm md:text-xl font-gray-600 ">{sayings}</p>
             <p className="font-medium">- {name}</p>
         </div>
     )
 }
 
 const TestimonialsPage = () => {
+  const imageStyle = "w-45 md:h-45 h-auto";
   return (
-    <section className="flex flex-row justify-center items-center gap-8 bg-orange-200 mt-10 pl-15 pr-0 py-20">
+    <section className="flex flex-col md:flex-row justify-center items-center gap-8 bg-orange-200 mt-10 p-5 md:pl-15 md:pr-0 py-20">
       <div className="flex flex-col justify-center items-start ">
         <p className="text-orange-500 font-bold" >TESTIMONIALS</p>
         <h1 className="text-4xl font-bold text-gray-700">Once You Try it, You Can't<br/> Go Back</h1>
@@ -68,19 +69,20 @@ const TestimonialsPage = () => {
 
         </div>
       </div>
-      <div className="grid grid-cols-3 gap-4 pr-0 w-fit">
-        <img className="w-45 h-45 " src={image1} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image2} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image3} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image4} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image5} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image6} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image7} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image8} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image9} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image10} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image11} alt="A photo of a delicious meal" />
-        <img className="w-45 h-45 " src={image12} alt="A photo of a delicious meal" />
+      {/* Gallery Section */}
+      <div className="grid grid-cols-3 gap-4 pr-0 w-full md:w-fit ">
+        <img className={imageStyle} src={image1} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image2} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image3} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image4} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image5} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image6} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image7} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image8} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image9} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image10} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image11} alt="A photo of a delicious meal" />
+        <img className={imageStyle} src={image12} alt="A photo of a delicious meal" />
       </div>
     </section>
   )

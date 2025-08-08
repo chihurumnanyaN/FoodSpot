@@ -12,9 +12,9 @@ const Contact = () => {
 
   const dstyle = "flex flex-col justify-start items-start gap-1";
   return (
-    <section className="flex flex-col justify-center items-center">
-       <div className="flex flex-row justify-center items-start gap-4 w-280 bg-orange-300 rounded-md mt-20 mb-40">
-         <div className="flex flex-col justify-center items-start gap-4 w-2/3 p-10">
+    <section className="flex flex-col justify-center items-center ">
+       <div className="flex flex-col md:flex-row justify-center items-start gap-4 w-full md:w-280 bg-orange-300 rounded-md mt-20 mb-40">
+         <div className="flex flex-col justify-center items-start gap-4 md:w-2/3 p-10">
             <h1 className="text-5xl text-yellow-900 font-bold">Get Your first meal for free!</h1>
             <p  className="text-xl text-gray-800">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!</p>
             <form action="post" className="flex flex-row flex-wrap gap-5">
@@ -47,7 +47,7 @@ const Contact = () => {
             </form>
          </div>
           <img
-          className="w-1/3 h-auto rounded-r-md"
+          className=" md:w-1/3 h-auto rounded-t-md md:rounded-r-md"
            src={ladyEating} 
            alt="lady eating our delicious meal" 
            />
