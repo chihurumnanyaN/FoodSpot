@@ -5,6 +5,7 @@ import Hero from './components/hero'
 import Meal from './components/meal'
 import TestimonialsPage from './components/testimonials'
 import Pricing from './components/pricing'
+import Contact from './components/contact'
 import Footer from './components/footer'
 
 const App  = () => {
@@ -16,6 +17,7 @@ const App  = () => {
       <Meal/>
       <TestimonialsPage/>
        <Pricing/>
+      <Contact/>
       <Footer/>
      
     </>

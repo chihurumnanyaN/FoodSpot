@@ -87,7 +87,7 @@ const Meal = () => {
       <div className={"flex flex-col justify-center items-center mt-20   "}>
         <p className="text-orange-500 font-bold">MEALS</p>
         <h1 className="text-5xl font-extrabold text-gray-600">
-          Omnifood AI Chooses from 5000+ recipes
+          FoodSpot AI Chooses from 5000+ recipes
         </h1>
       </div>
       <div className="flex flex-row justify-center items-center gap-15 mt-10 mb-20 px-20 flex-wrap">

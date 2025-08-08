@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const PriceCard = ({ price ,isPro, planType, monthPrice, feature1 , feature2 ,feature3 ,feature4 }) => {
   return(
     <div className={`flex flex-col justify-center items-center gap-5 w-4lg border border-orange-300 rounded-lg p-10 ${isPro ? 'bg-orange-100 border-0' : 'bg-white'}`}>
@@ -47,6 +48,18 @@ const PriceCard = ({ price ,isPro, planType, monthPrice, feature1 , feature2 ,fe
     </div>
   )
 }
+
+const Expect = ({iconName, heading, about}) => {
+ 
+  return(
+    <div className="flex flex-col justify-start items-start gap-4 w-60">
+    <ion-icon name={iconName} class="text-orange-500 text-3xl bg-orange-100 rounded-full p-5"></ion-icon>
+      <h2 className="text-2xl text-gray-700 font-bold">{heading}</h2>
+      <p className="text-xl text-gray-600 ">{about}</p>
+      </div>
+  )
+}
+
 const Pricing = () => {
   return (
     <section className="flex flex-col justify-center items-center py-20 pt-20 px-20 gap-10" >
@@ -79,6 +92,32 @@ const Pricing = () => {
             feature4="Get access to latest recipes"
             />
         </div>
+        <p className="text-gray-700 text-sm">Prices include all applicable taxes. Users can cancel at any time. Both plans include the following</p>
+    
+        <div className="flex flex-row justify-center item-center gap-10 mt-20">
+          <Expect
+            iconName="flame"
+            heading="Never cool again!"
+            about="Our subscriptions cover 365 days per year, even including major holidays"
+            />
+                      <Expect
+            iconName="nutrition-outline"
+            heading="Local and Organic"
+            about="Our cooks only use local use local, fresh, and organic products to prepare your meals."
+            />
+
+                      <Expect
+            iconName="leaf"
+            heading="No waste"
+            about="All our partners only use reusable containers to package all your meals."
+            />
+
+                      <Expect
+            iconName="pause"
+            heading="Pause anytime"
+            about="Going on vacation? Just pause your subscription, and we refund unused days."
+            />
+            </div>
     </section>
   )
 }

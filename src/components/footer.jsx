@@ -27,7 +27,7 @@ const Footer = () => {
             </ul>
              
              <p className="text-left text-sm text-gray-500 mt-8">
-  Built with ⚛️ React by <br/> <span className="font-semibold">chihurumnanyaN</span>
+  Built with ⚛️ React by <br/> <span className="font-semibold">ChihurumnanyaN</span>
 </p>
         </div>
 
